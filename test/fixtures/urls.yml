@@ -1,11 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  full: MyString
-  short: MyString
-  count: 1
+  full: https://test.testing/ilon_mask
+  short: short1
+  count: 0
 
 two:
-  full: MyString
-  short: MyString
+  full: https://test_url.url_test/love_test
+  short: short2
   count: 1
