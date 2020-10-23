@@ -6,7 +6,7 @@ class UrlFlowTest < ActionDispatch::IntegrationTest
     # as user of system 
     # I want to get short url for my long url
     URL = 'https://soft-project.com/rnd_department/testing_task'
-    post "/urls", params: { url: URL }
+    post "/urls", params: { full: URL }
     short = @response.body
 
     # I want to resolve my short url and get my source url
