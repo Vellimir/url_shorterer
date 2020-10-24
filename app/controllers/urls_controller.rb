@@ -23,6 +23,7 @@ class UrlsController < ApplicationController
 
   def load_url
     @url = Url.find_by short: params[:short_url]
+    render status: 404 unless @url
   end
 
 end
