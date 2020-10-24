@@ -3,6 +3,7 @@ class UrlsController < ApplicationController
 
   def create
     url = Url.build permit[:full]
+    return render status: :bad_request, json: url.errors unless url.valid?
     render plain: url.short
   end
 
